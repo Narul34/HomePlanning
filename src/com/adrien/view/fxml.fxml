@@ -2,17 +2,22 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane style="-fx-background-color: black; -fx-background-radius: 5px; -fx-border-color: red;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
-   </center>
+<BorderPane style="-fx-background-color: black; -fx-background-radius: 5px; -fx-border-color: red;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <opaqueInsets>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </opaqueInsets>
    <bottom>
       <ProgressBar prefWidth="200.0" progress="0.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
    </bottom>
+   <center>
+      <TextField fx:id="welcome_title" alignment="CENTER" style="-fx-background-color: black;" text="Bienvenue" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font>
+      </TextField>
+   </center>
 </BorderPane>
